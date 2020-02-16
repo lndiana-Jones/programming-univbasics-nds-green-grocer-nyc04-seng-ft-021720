@@ -19,7 +19,7 @@ def consolidate_cart(cart)
       cart[count][:count] = 1
       result.push(cart[count])
     else 
-      if item[:count] #check for :count key
+      if item[:count] 
         item[:count] = item[:count] + 1
       else
         item[:count] = 1
